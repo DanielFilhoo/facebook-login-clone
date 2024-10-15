@@ -1,0 +1,320 @@
+/* Reset básico para margens, paddings e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #f0f2f5; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    flex-direction: column;
+}
+
+/* Layout principal com dois blocos (texto e formulário) */
+main {
+    display: flex;
+    max-width: 1200px; /* Limite de largura */
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 90px; /* Espaço inferior */
+}
+
+/* Contêiner principal à esquerda (texto do Facebook) */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px; /* Limite de largura do contêiner */
+    padding: 10px;
+}
+
+/* Logo do Facebook */
+#main-container img {
+    width: 100%; /* Ajuste a largura para 100% do contêiner */
+    max-width: 500px;
+}
+
+/* Texto abaixo do logo do Facebook */
+#main-container h2 {
+    font-size: 24px;
+    color: #1c1e21; /* Cor do texto */
+    font-weight: normal;
+    line-height: 32px;
+    margin: 5px 0 100px;
+    font-family: Helvetica;
+}
+
+/* Contêiner do formulário à direita */
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Limite de largura do formulário */
+}
+
+/* Caixa de fundo do formulário */
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Formulário de login */
+#login-form {
+    margin-top: 20px;
+}
+
+/* Estilo dos campos de input */
+#login-form input {
+    display: block;
+    font-size: 16px;
+    padding: 14px;
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 100%;
+    margin-bottom: 10px; /* Espaço inferior entre campos */
+}
+
+/* Estilo do botão de submit (Entrar) */
+#login-form input[type="submit"] {
+    background-color: #1877f2; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px;
+    cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+    border-radius: 5px;
+}
+
+/* Efeito hover no botão */
+#login-form input[type="submit"]:hover {
+    background-color: #166fe5; /* Tom mais escuro de azul no hover */
+}
+
+/* Separador "OU" entre o botão de login e a opção de Instagram */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* Linha cinza do separador */
+.line {
+    flex: 5;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+/* Texto do separador */
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #dbdbdb;
+    background-color: #fff;
+    top: 245px;
+    width: 25px;
+    margin-right: 5px;
+    font-size:14px ;/* Texto em maiúsculas */
+}
+
+/* Contêiner para links adicionais abaixo do formulário */
+#other-links {
+    text-align: center;
+}
+
+/* Links de "Entrar com o Instagram" e similares */
+#other-links a {
+    color: #385185; /* Cor dos links */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px; /* Espaço superior */
+}
+
+/* Imagem do logo do Instagram */
+#other-links img {
+    margin-right: 8px; /* Espaço à direita da imagem */
+    width: 36px; /* Redução do tamanho da imagem */
+}
+
+/* Estilo do link "Esqueceu a Senha?" */
+#forgot-password {
+    margin-top: 15px;
+}
+
+#forgot-password a {
+    color: #373799;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Contêiner para o link de "Criar nova conta" */
+#register-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#register-container a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contêiner para links de download de apps */
+#get-app-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Imagens dos botões de download (App Store e Google Play) */
+#get-app-container img {
+    margin: 10px 0;
+    width: 136px;
+    height: 40px;
+}
+
+/* Estilo do rodapé */
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    color: #737373;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Links do rodapé (Cadastre-se, Entrar, etc.) */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 70px;
+}
+
+.footer-links li {
+    margin: 0 5px;
+}
+
+/* Estilo dos links do rodapé */
+.footer-links a {
+    color: #737373;
+    text-decoration: none;
+}
+
+/* Efeito hover nos links do rodapé */
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Texto de copyright no rodapé */
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Media Queries para tornar a página responsiva */
+
+/* Estilos para tablets (largura entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        font-family: Helvetica
+    }
+
+    #main-container img {
+        max-width: 450px;
+    }
+
+    #main-container h2 {
+        margin-bottom: 60px;
+    }
+
+    .form-container {
+        max-width: 500px;
+    }
+
+    .separator span {
+        top: 725px;
+        font-size: 12px;
+    }
+}
+
+/* Estilos para dispositivos móveis (largura até 450px) */
+@media (max-width: 450px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        font-family: Helvetica
+    }
+
+    #main-container img {
+        max-width: 230px;
+        margin-top: 85px;
+        margin-left: 50px;
+        
+    }
+
+    #main-container h2 {
+        font-size: 15px;
+        margin: 2px;
+    }
+
+    .form-container {
+        max-width: 300px;
+    }
+
+    #login-form input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #login-form input[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .separator span {
+        top: 370px;
+        font-size: 12px;
+    }
+
+    #other-links a {
+        font-size: 12px;
+    }
+    
+    #forgot-password a {
+        font-size: 12px;
+    }
+
+    #register-container a {
+        font-size: 14px;
+    }
+
+    #get-app-container img {
+        width: 120px;
+        height: 36px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
